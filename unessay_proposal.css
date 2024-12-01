@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    height:100vh;
+    width: 100vw;
+    animation: fadeIn 1.5s
+} 
+
+.funnel-display-fontUSAGE {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+.parallax {
+    background-image: url('background_img.png');
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:.8;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+hr{
+  border-top: none;
+  background: burlywood;
+  height: .5%;
+  border: none;
+  width: 50%;
+}
+
+li{
+  color:darksalmon;
+}
+
+
+.title{
+    background-color: white;
+    color:black;
+    width: fit-content;
+    height:fit-content;
+    padding: 2%;
+    font-size: 175% !important;
+    text-align: center;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  color: saddlebrown;
+  background-color: antiquewhite;
+  font-size: 110% !important;
+  align-items: center;
+
+}

@@ -8,6 +8,48 @@
   }
 }
 
+@keyframes sail {
+  0% {
+    transform: translateX(-30px);
+    
+  }
+  100% {
+    transform: translateX(30%);
+  }
+  0%{
+    transform: translatex(-30px)
+  }
+}
+
+@keyframes bounce {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+
+  to {
+      transform: translate3d(0, 50px, 0);
+  }
+}
+
+@keyframes slideIn{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+
 body{
     background-color: antiquewhite;
     margin: 0;
@@ -15,6 +57,10 @@ body{
     width: 100vw;
     animation: fadeIn 1.5s
 } 
+
+.beginning_animation{
+    animation: bounce .5s ease-in-out infinite alternate;
+}
 
 .funnel-display-fontUSAGE {
     font-family: "Funnel Display", sans-serif;
@@ -72,4 +118,35 @@ li{
   font-size: 110% !important;
   align-items: center;
 
+}
+
+.ship {
+  border-radius: 10px;
+  box-shadow: inset -5px 5px 0px rgba(0, 0, 0, 0.3);
+  animation: sail 8s ease-in-out infinite;
+}
+
+
+  
+
+
+#thought-box{
+  display: none;
+}
+
+
+.button{
+  font-size: 200%;
+  padding: 1%;
+  color: darksalmon;
+}
+.button:hover{
+  border-radius: 10%;
+  background-color: black;
+  color: antiquewhite;
+   transition: .4s ease-in-out;
+}
+
+.slide-element{
+  display: none;
 }

@@ -60,6 +60,9 @@ body{
 
 .beginning_animation{
     animation: bounce .5s ease-in-out infinite alternate;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
 }
 
 .funnel-display-fontUSAGE {

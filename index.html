@@ -8,8 +8,8 @@
 
 <body>
 
-   <div class = 'parallax'>
-      <div class = 'funnel-display-fontUSAGE title'>
+   <div id = 'paral' class = 'parallax'>
+      <div class = 'window funnel-display-fontUSAGE title'>
          Understanding the Hellenistic Culture of The Macedonian Empire
       </div>
       <div><i class="beginning_animation fa-solid fa-angles-down" style = 'font-size:  250%; color: white;'></i></div>
@@ -23,16 +23,22 @@
 
    <hr>
 
-   <div class = 'funnel-display-fontUSAGE information'><span style = 'background-color: saddlebrown; color: white; padding: .5%; text-align:center;'>
-      The Start of the Empire: Alexender The Great</span>
+   <div class = 'funnel-display-fontUSAGE information'>
+      <span style = 'background-color: saddlebrown; color: white; padding: .5%; text-align:center;'>
+         The Start of the Empire: Alexender The Great
+      </span>
       <span class = 'funnel-display-fontUSAGE information' style = 'flex-direction: row;'>
       <span><img src = 'IMG_5298-removebg-preview.png' alt="The Macadenoian Empire" style = 'border-radius: 10%;'></span><ul style="text-align: right;"> Alexander the Great was conequror whose empire, The Macedonian Empire, strectched from Greece to far regions in Eastern European and Southern Asia, including India. 
          Upon his death, he had no line succession to heed his vast empire, which resulted in his generals fighting for the remains of his empire. Eventually, the generals separated the region into several kingdoms. This caused 
          Greek culture to spread far and wide changing the course of history for many countries and drastically impacting Greeks and their culture.
       </ul>
       </span>
-      <span>
-         <img src = 'macedonian_empire.jpg' alt="The Macadenoian Empire">
+      <span id = 'image' class = 'funnel-display-fontUSAGE information' style = 'flex-direction: column; justify-content: space-evenly;'>
+         <span class = 'before' style = 'color:transparent; margin-bottom: .5%; padding: .5%;'> Before The Death of Alexander</span>
+         <img  class = 'before_window' src ='macedonian_empire.jpg' alt="The Macadenoian Empire" style = 'width: 65%; z-index: 1' >
+         <span style = 'margin-top: 3%;'></span>
+         <span class = 'after' style = 'color: transparent; margin-bottom: .5%; padding: .5%;'>After The Death of Alexander</span>
+         <img class = 'after_window' src = 'kingdom.jpg' style = 'width: 65%; border-bottom: 10px; display: none; z-index: 0;'>
       </span>
    </div>
 
@@ -63,10 +69,10 @@
    </div>
 
    <div class = 'funnel-display-fontUSAGE information' style = 'justify-content: space-evenly; flex-direction: row!important;'>
-      <i  onclick = 'toggleElement("thought_box")' class="button fa-solid fa-feather" ></i>
-      <i onclick = 'toggleElement("religion_box")' class="button fa-solid fa-church" ></i>
-      <i  onclick = 'toggleElement("arts_box")' class="button fa-solid fa-paintbrush"></i>
-      <i  onclick = 'toggleElement("technology_box")' class="button fa-solid fa-gears"  ></i>
+      <i id = "thought" onclick = 'toggleElement("thought_box", "thought")' class="button fa-solid fa-feather" ></i>
+      <i id = "religion" onclick = 'toggleElement("religion_box", "religion")' class="button fa-solid fa-church" ></i>
+      <i id = "arts" onclick = 'toggleElement("arts_box", "arts")' class="button fa-solid fa-paintbrush"></i>
+      <i id = "technology" onclick = 'toggleElement("technology_box", "technology")' class="button fa-solid fa-gears"></i>
    </div>
 
    <div id = 'case' class = 'funnel-display-fontUSAGE information' style = 'flex-direction: column !important; align-items: center;'></div>

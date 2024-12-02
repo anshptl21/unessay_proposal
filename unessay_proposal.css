@@ -8,6 +8,23 @@
   }
 }
 
+@keyframes scale{
+  from {
+		transform: scale(0, .025);
+	}
+	to {
+		transform: scale(1, .025);
+	}
+}
+
+@keyframes slideDown{
+  from{
+    transform: translateY(-105%)
+  } to {
+    transform: translateY(0)
+  }
+}
+
 @keyframes sail {
   0% {
     transform: translateX(-30px);
@@ -55,7 +72,7 @@ body{
     margin: 0;
     height:100vh;
     width: 100vw;
-    animation: fadeIn 1.5s
+    animation: fadeIn 1.5s;
 } 
 
 .beginning_animation{
@@ -152,4 +169,27 @@ li{
 
 .slide-element{
   display: none;
+}
+
+.fadeC{
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.slid{
+  animation: slideDown 1s ease-in-out;
+  animation-delay: .1s;
+}
+
+.color{
+  color:darksalmon !important;
+  background-color: bisque;
+  text-align: center;
+}
+
+.display{
+  display: block !important;
+}
+
+.scaled{
+  animation: scale 1s ease-in-out;
 }
